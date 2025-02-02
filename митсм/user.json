@@ -1,0 +1,24 @@
+{
+   "users": [
+      {
+         "firstName": "Timur",
+         "lastName": "Aibashev",
+         "age": 17
+      },
+      {
+         "firstName": "Ildan",
+         "lastName": "Valiev",
+         "age": 27
+      },
+      {
+         "firstName": "Danil",
+         "lastName": "Arslanov",
+         "age": 37
+      },
+      {
+         "firstName": "Stanislav",
+         "lastName": "Gatiyatov",
+         "age": 47
+      }
+   ]
+}

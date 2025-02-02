@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+
+    <div id="app">
+
+
+        <h2>Cоздать Пользователя</h2>
+        <input type="text" v-model="user.firstName" placeholder="First Name">
+        <input type="text" v-model="user.lastName" placeholder="Last Name">
+        <input type="number" v-model.number="user.age" placeholder="Age">
+        <button @click="addUser">Создать Юзера</button>
+
+        <h2>Список пользователей</h2>
+        <ul>
+            <li v-for="(user, index) in users" :key="index">
+                {{ user.firstName }} {{ user.lastName }} ({{ user.age }})
+                <button @click="deleteUser(index)">Удалить</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="vue.global.js"></script>
+    <script src="js/app.js"></script>
+
+    
+    
+</body>
+</html>
